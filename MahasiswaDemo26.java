@@ -32,7 +32,7 @@ public class MahasiswaDemo26 {
                     System.out.printf("Tugas %s berhasil dikumpulkan\n", mhs.nama);
                     break;
 
-                case 2:
+                    case 2:
                     Mahasiswa26 dinilai = stack.pop();
                     if (dinilai != null) {
                         System.out.println("Menilai tugas dari " + dinilai.nama);
@@ -41,8 +41,11 @@ public class MahasiswaDemo26 {
                         scan.nextLine();
                         dinilai.tugasDinilai(nilai);
                         System.out.printf("Nilai Tugas %s adalah %d\n", dinilai.nama, nilai);
+                        String biner = stack.konversiDesimalKeBiner(nilai);
+                        System.out.println("Nilai Biner Tugas: " + biner);
                     }
                     break;
+                
 
                 case 3:
                     Mahasiswa26 lihat = stack.peek();
